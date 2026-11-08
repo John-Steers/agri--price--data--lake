@@ -1,0 +1,5 @@
+services:
+  lake:
+    build: .
+    volumes: ["./data:/app/data"]
+    command: ["python","-m","app.build_lake"]
